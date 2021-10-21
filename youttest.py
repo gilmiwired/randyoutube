@@ -1,6 +1,6 @@
 from apiclient.discovery import build
 from flask import Flask
-from flask import Flask, render_template #追加
+from flask import Flask, render_template 
 import random, string
 
 def randomname(n):
@@ -29,8 +29,8 @@ app = Flask(__name__)
 def hello():
     name = a
     #return name
-    return render_template('hello.html', title='flask test', name=name) #変更
+    return render_template('hello.html', title='flask test', name=name) 
 
-## おまじない
+
 if __name__ == "__main__":
     app.run(debug=True)
